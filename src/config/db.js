@@ -10,7 +10,7 @@ const clientOptions = {
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI, clientOptions);
+    await mongoose.connect("mongodb+srv://demo:demo@demo.ql3l92v.mongodb.net/project-management?appName=demo", clientOptions);
     await mongoose.connection.db.admin().command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } catch (err) {
