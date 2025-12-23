@@ -15,7 +15,7 @@ const connectDB = async () => {
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } catch (err) {
     console.error("MongoDB connection error:", err.message);
-    // process.exit(1); // Keep alive to see if it retries or just logs
+    // process.exit(1);  //  Keep alive to see if it retries or just logs
   }
 };
 
